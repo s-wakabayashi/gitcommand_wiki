@@ -176,9 +176,6 @@ git diff HEAD
 * --hard
     * HEADとインデックスと作業ツリーの位置を変更する
 
-* 【仕様上の注意】
-    * resetはpushしたあとはやってはいけない 
-
 ### --soft
 ```js
 // 1つ前のコミットまでHEADを戻す（インデックスにaddされたまま）
@@ -202,6 +199,8 @@ git reset HEAD^ index.html
 git reset --hard HEAD^
 ```
 
+**【使用上の注意】**
+resetはpushしたあとはやってはいけない 
 
 # revert
 **特定のコミットを打ち消し、コミットする（push前/push後どちらにも使える）**
@@ -213,6 +212,10 @@ git revert HEAD
 // マージコミットの取り消し
 git revert -m 1f60f24d
 ```
+
+**【使用上の注意】**
+特になし？
+いつでもやって良い。
 
 # rebase
 **fast-fowardでmergeしたりコミットを改変する**
