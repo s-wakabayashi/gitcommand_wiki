@@ -165,7 +165,7 @@ git diff HEAD
 ```
 
 
-# reset
+# reset（uncommit(alias））
 **特定のコミットまで戻る（pushする前のみ使える）**  
 目的別のオプションが3つあるので注意して使い分ける
 
